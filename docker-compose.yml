@@ -217,6 +217,9 @@ volumes:
   data4-1:
   data4-2:
 
+
 networks:
+  default:
   traefik:
-    external: true
+    external:
+      name: "${TRAEFIK_NETWORK_NAME}"
