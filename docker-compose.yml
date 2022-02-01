@@ -39,7 +39,7 @@ services:
     postgres:
       networks:
         - traefik
-      container_name: postgres
+      container_name: postgresdataverse
       ports:
         - "5433:5432"
       image: postgres:10.13
